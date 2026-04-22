@@ -16,7 +16,7 @@ pipeline {
                     // Используем docker-compose для пересборки и запуска
                     // --build заставит Docker пересобрать образ, если код изменился
                     // -d запустит всё в фоновом режиме
-                    sh 'docker-compose up --build -d'
+                    sh 'docker compose up --build -d'
                 }
             }
         }
